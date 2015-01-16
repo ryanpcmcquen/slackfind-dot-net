@@ -1,7 +1,7 @@
-syntax: glob
 *pyc
 *swp
-./settings_local.py
-./\.project
-./\.pydevproject
-./\.settings
+settings_local.py
+.project
+.pydevproject
+.settings
+

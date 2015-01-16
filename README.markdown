@@ -21,16 +21,15 @@
 
 ## CONTRIBUTION
 
- * make branch of http://bitbucket.org/tony/slackfind
- * clone your branch 
+ * fork
  * make changes
  * don't forget to edit templates/about.html to add youself in the authors list
  * if changes are significant add your blog post and update microblog/fixtures/initial_data.xml
  * push your changes into your branch
- * contact maintainer for merge your changes into main branch
+ * pull request
 
 ## CONTACTS 
 
- * Email: tony-k [at] mail [dot] ru
- * Bitbucket account: tony
+ * Email: ryan.q [at] linux [dot] com
+
 
