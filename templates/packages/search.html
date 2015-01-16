@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% load pageswitcher %}
+{% load i18n mycache %}
+{% load packages_tags %}
+
+{% block extrahead %}
+<link href="{{ STATIC_URL }}packages/css/results.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block title %}
+	{{ search_name }}
+{% endblock %}
+
+{% block content %}
+
+<div id="content">
+
+              {% search %}
+              
+                <div style="background: #333333;" align="center" >
+                    {% pageswitcher %}
+                </div>
+                 
+                  {% for package in result.object_list %}
+                
+                  <div class="results-wrapper">    
+                        <div class="results" align="center">
+                        
+                            <div class="content result-block" align="center" >
+                                <div class="result-header">
+                                
+                                    <div class="result-package-name">
+                                        {{ package }}
+                                    </div>                                    
+                                    
+                                    <div class="result-repository">
+                                        Slackware-{{ package.distversion }} / {% repositorylink package.repository %}
+                                    </div>
+                                    
+                                </div>
+
+                                
+                                <div class="result-content">
+                                
+                            {% trans 'location' %}: {{ package.location }}    
+                            <br/>    
+				{% if package.requires %}
+				    dependencies: {{ package.requires }}<br/>
+				{% endif %}
+
+				{% if package.suggests %}
+				    suggests: {{ package.suggests }}<br/>
+				{% endif %}
+
+				{% if package.conflicts %}
+				    conflicts: {{ package.conflicts }}<br/>
+				{% endif %}
+
+                            <br/>
+                            {% trans 'size compressed' %}: {{ package.size_compressed }} K<br/>
+                            {% trans 'size uncompressed' %}: {{ package.size_uncompressed }} K<br/>
+                            <br/>
+                            
+                                <pre>
+{{ package.description }}</pre>
+
+                                    <div class="result-toolbar">
+                                        {% download user package %}                                        
+                                    </div>
+
+                                </div> 
+                            </div> <!-- class="content result-block" -->    
+					</div> <!-- id="results" -->
+                  </div> <!-- id="results-wrapper" -->         
+                        {% endfor %}
+
+                            
+
+
+                <div style="background: #333333;" align="center">
+                    {% pageswitcher %}
+                </div>
+
+
+                <div class="empty">
+
+                </div>
+
+</div></div>
+    
+{% endblock %}

@@ -1,0 +1,53 @@
+
+
+#results-container
+{	
+
+}
+
+.results
+{	
+	
+}
+
+.result-block
+{	
+	padding: 5px;
+	width: 740px;
+	margin-top: 10px;
+}
+
+.result-header
+{
+	
+}
+
+.result-content
+{
+	margin-top: 25px;
+	text-align: justify;
+	
+}
+
+.result-package-name
+{
+	float: left;
+	font-weight: bold;
+}
+
+.result-toolbar
+{
+	text-align: right;
+	margin-right: 10px;	
+}
+
+.result-repository
+{
+	float: right;
+}
+
+.paging-button
+{
+	padding: 3px;
+	
+}

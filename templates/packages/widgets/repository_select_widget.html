@@ -1,0 +1,8 @@
+
+{% load packages_tags %}
+
+<ul>
+    {% for choice in data %}
+    <li> <input {% if choice.checked %}checked="checked"{% endif %} type="checkbox" value="{{ choice.idx }}" name="{{ name }}"/> {% repositorylink choice.idx %} </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,447 @@
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+background: transparent;
+}
+/* Не забываем описать стили для :focus! */
+:focus {
+outline: 0;
+}
+body {
+line-height: 1;
+color: black;
+background: white;
+}
+ol, ul {
+list-style: none;
+}
+/* Для таблиц все еще надо прописывать 'cellspacing="0"' в коде */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+caption, th, td {
+text-align: left;
+font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+
+/*main layout*/
+
+
+html, body {background:white url(/static/img/background.jpg) repeat scroll 0 0; margin: 0; padding: 0; font-family:"Dejavu Sans",Arial, Helvetica, sans-serif; font-size:11px;}
+
+#page {position: relative;}
+
+html>body #page {height: auto;}
+
+#empty, .empty, #footer {height: 40px; clear:both;}
+
+#footer {
+/*	position: absolute;*/
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align:center;
+}
+
+#page {	
+
+	color:#FFF;
+}
+
+#header {
+	height:40px;
+	background:#333333;
+}
+
+#footer {
+	background:#333333;
+    color: white;
+}
+
+#footer .pad {
+	padding:12px;
+    padding-bottom:0px;
+}
+
+#header .pad {
+	padding:12px;
+}
+
+#header-right {
+	float:right;
+	width:300px;
+	text-align:right;
+}
+
+a, td {
+	color:white;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+#logo {
+	height:115px;
+	width:420px;
+	margin:0 auto;
+	clear:both;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#search {
+	width:780px;
+	margin:0 auto;
+	margin-top:20px;
+	height:120px;
+	clear:both;
+}
+
+#content .pad 
+{
+    padding:20px;
+}
+
+#search .pad {
+	padding:20px;
+}
+
+.left {
+	width:380px;
+	float:left;
+	background:#333333;
+	min-height:200px;
+}
+
+.left .pad, #right .pad {
+	padding:20px;
+}
+
+.right{
+	width:380px;
+	float:right;
+	height:215px;
+	background:#333333;
+}
+
+h1 {
+	font-size:2.5em;
+	text-align:center;
+	margin-bottom:20px;
+	font-variant: small-caps;
+        color: #333333;
+}
+
+.pad h1
+{
+       color: white;
+       font-size:2em;
+}
+
+h2 {
+	font-size:1.7em;
+	text-align:center;
+	margin-bottom:15px;
+	font-variant: small-caps;
+}
+
+hr {
+	display:none;
+	clear:both;
+}
+
+#content {
+    clear:both;
+    margin: 0 auto 20px;
+    width:800px;
+    height:auto;
+    /*display:table;*/
+}
+
+#search-switcher
+{
+    display: block;
+    margin-top: 10px;
+    padding: 1px;
+}
+
+ul.menu, ul.menu li {
+    display: inline;
+    float:left;
+}
+
+ul.menu li a {
+    padding:0.1em 0.1em 0.1em 1em;
+    display:block; 
+}
+
+.results-wrapper {
+	background:#333;
+	margin-top:20px;
+	padding:20px;
+	text-align:left !important;
+}
+
+
+.result-content, .result-package-name, .result-repository {
+	text-align:left;
+}
+
+div.result-content {
+	padding-top: 30px;
+}
+
+div.result-header {
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.result-package-name {
+	float: left;
+}
+
+div.result-repository {
+	float: right;
+}
+
+div.result-toolbar {
+	margin-top: 15px; 
+}
+
+#search {
+/*	display:table; */
+}
+
+
+
+/*blog*/
+
+.post.content {
+	width:590px;
+	background:#333333;
+	text-align:left;
+	line-height:1.4em;
+	
+	font-family:Sans;
+	padding:10px;	
+	margin: 0 auto;
+	margin-top:20px;
+}
+
+.paging
+{
+    margin-top:10px;
+    padding: 8px;
+
+}
+
+
+.post.content .text {
+	font-size:1em;
+	color:#EEE;
+	margin:10px 0;
+}
+
+.post.content .metadata {
+	padding:10px 0;	
+}
+
+.post.content .bookmarks {
+	padding:10px 0;	
+	text-align:right;
+}
+
+.post.content .pad {
+	padding:10px;
+
+}
+
+.post.content h1, #comments h1 {
+	font-family:Georgia,serif;
+	font-size:2.6em;
+	line-height:1em;
+	color: white;
+}
+
+.blogcomment {
+	padding-bottom:10px;
+	padding-top:10px;
+	padding-left:20px;
+	padding-right:10px;
+}
+
+.odd
+{
+    background: #555555; 
+}
+
+.blogcomment .author, .comment-time {
+	font-weight:bold;
+}
+
+.blogcomment .text {
+	padding:10px;
+}
+
+/*links*/
+
+a {
+	font-weight:bold;
+
+	display:inline;
+}
+
+.hidden {
+	display:none;
+}
+
+
+/*blocks*/
+
+.block {
+	background:#333;
+	margin:0 auto;
+	margin-top:40px;
+}
+
+	.pad {
+		padding:10px;	
+	}
+	
+	.block table {
+		margin:0 auto;	
+	}
+	
+	.block table td{
+		padding:1px;
+		padding:2px 4px;
+	}
+
+.width300 {
+	width:300px;
+}
+
+.width400 {
+	width:400px;
+}
+
+.width500 {
+	width:500px;
+}
+
+.edit-submit {
+    display: none;
+}
+
+.statistics th
+{
+    font-weight: bold;
+}
+
+#langbar
+{
+    left:0;
+    position:absolute;
+    text-align:center;
+    width:100%;
+}
+.cloud a.tag10 { font-size: 1.0em; font-weight: 100; }
+.cloud a.tag9 { font-size: 1.2em; font-weight: 200; }
+.cloud a.tag8 { font-size: 1.4em; font-weight: 300; }
+.cloud a.tag7 { font-size: 1.6em; font-weight: 400; }
+.cloud a.tag6 { font-size: 1.8em; font-weight: 500; }
+.cloud a.tag5 { font-size: 2.0em; font-weight: 600; }
+.cloud a.tag4 { font-size: 2.4em; font-weight: 700; }
+.cloud a.tag3 { font-size: 2.8em; font-weight: 800; }
+.cloud a.tag2 { font-size: 3.1em; font-weight: 900; }
+.cloud a.tag1 { font-size: 3.5em; font-weight: 900; }
+
+a.arrow {
+	background:transparent url(/static/img/arrow.png) no-repeat;
+	width:12px;
+	height:12px;
+	overflow:hidden;
+	text-indent:99999px;
+	padding:0 !important;
+	margin-left:6px;
+	display:inline;
+}
+
+a.arrow:hover {
+    text-decoration: none;
+};
+
+.cloud { padding: 2px; line-height: 3em; text-align: center; }
+.cloud a { padding: 0px; }
+
+
+table td {
+	padding:4px;
+}
+
+
+h3 {
+	font-size:13px;
+	font-weight:bold;
+	margin-bottom:7px;
+}
+
+
+h3.clickable{
+	cursor:pointer;
+}
+
+#advanced-search table td {
+	padding:6px 12px;
+}
+
+ul.cloud {
+	font-size:8px;
+}
+
+#login {
+float:right;
+margin:0 !important;
+position:relative;
+}
+
+ul#navigation {
+	background:#333333 none repeat scroll 0 0;
+	font-family:Sans;
+	line-height:1.4em;
+	margin:20px auto 0;
+	padding:10px;
+	text-align:left;
+	width:590px;
+	display:block;
+	height:10px;
+}
+
+li.left {
+	float:left;
+}

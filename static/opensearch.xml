@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>Slackfind.net</ShortName>
+
+    <Description>
+    Slackware Packages Search Engine
+    </Description>
+    <Url type="text/html" method="get" template="http://slackfind.net/ru/packages/search/?name={searchTerms}"/>
+    <Contact>iamgeek@yandex.ru</Contact>
+    <Image width="16" height="16">http://slackfind.net/static/img/favicon.ico</Image>
+    <Developer>Tony</Developer>
+    <InputEncoding>UTF-8</InputEncoding>
+    
+    <moz:SearchForm>http://slackfind.net</moz:SearchForm>
+    <moz:UpdateUrl>http://slackfind.net/static/opensearch.xml</moz:UpdateUrl>
+    <moz:IconUpdateUrl>http://slackfind.net/static/img/favicon.ico</moz:IconUpdateUrl>
+    <moz:UpdateInterval>10</moz:UpdateInterval>
+</OpenSearchDescription>

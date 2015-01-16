@@ -1,0 +1,60 @@
+#search-wrapper
+{
+	position: relative;	
+}
+
+#search-form
+{
+	width: 800px;
+	min-height: 100px;
+}
+
+#search-bottom
+{
+	text-align: center;
+	
+}
+
+#search-bottom  a
+{
+	color: black;
+	font-weight: bold;
+	
+}
+
+#info-wrapper
+{
+	position: relative;	
+	height: 390px;
+	top: 45px;
+}
+
+#info-container
+{
+	width: 800px;
+}
+
+#blog
+{
+	height: 180px;
+	width: 390px;
+	float: right;	
+}
+
+#statistics
+{
+	height: 180px;
+	width: 390px;
+	float: left;
+}
+
+#advanced-search-wrapper
+{
+	display: none;
+	position: relative;
+}
+
+#advanced-search-form
+{
+	width: 800px;	
+}

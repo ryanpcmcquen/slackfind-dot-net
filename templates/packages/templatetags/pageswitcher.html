@@ -1,0 +1,11 @@
+{% load i18n %}
+
+<div class="paging">   
+{% if showpaging %}
+             {% trans 'pages' %}:
+        {% for p in pages %}
+            <span class="paging-button"><a href="{{ get_params }}page={{ p }}">{{ p }}</a></span>
+        {% endfor %}
+
+{% endif %}
+</div>

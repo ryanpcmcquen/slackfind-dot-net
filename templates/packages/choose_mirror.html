@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load packages_tags %}
+{% load i18n %}
+
+{% block title %} Index {% endblock %}
+
+{% block content %}
+
+<div id="content">
+
+
+<div id="empty"></div>
+
+
+
+<div id="center"><div class="pad" style="background: #333333;">
+    <h1>{% trans 'Choose mirror for package ' %} {{ package }} </h1>
+    <ul>
+    {% for mirror in mirrors %}
+        <li><a href="{{ mirror.link }}">{{ mirror.mirror }}</a></li>
+    {% endfor %}
+    </ul>
+</div></div>
+
+</div></div>
+
+
+              
+{% endblock %}

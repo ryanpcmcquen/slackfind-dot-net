@@ -1,0 +1,5 @@
+<ul>
+    {% for choice in data %}
+        <li> <input {% if choice.checked %}checked="checked"{% endif %} type="checkbox" value="{{ choice.idx }}" name="{{ name }}"/> {{ choice.value }} </li>
+    {% endfor %}
+</ul>

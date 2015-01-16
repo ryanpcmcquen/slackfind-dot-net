@@ -1,0 +1,10 @@
+{% load multilingual_tags %}
+
+{% for group in data %}
+
+    {% for name, cond, version, arch, build in group %}
+
+    <a target="_blank" href="{% language_url %}{% url search %}?name={{ name }}&distversion=">{{ name }}</a> {{ cond }} <a target="_blank" href="{% language_url %}{% url advanced-search %}?name={{ name }}&version={{ version }}">{{ version }}</a>{% if not forloop.last %},{% endif %}
+    {% endfor %}
+    {% if not forloop.last %}|{% endif %}
+{% endfor %}

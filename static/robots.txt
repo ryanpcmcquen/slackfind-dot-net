@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /static/opensearch.xml
+Disallow: /en/static/opensearch.xml
+Disallow: /ru/static/opensearch.xml
+Disallow: /packages/choosemirror/
+Disallow: /en/packages/choosemirror/
+Disallow: /ru/packages/choosemirror/
+Disallow: /admin/
+Disallow: /en/admin/
+Disallow: /ru/admin/
+Crawl-delay: 5 

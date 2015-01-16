@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% load packages_tags %}
+{% load i18n mycache %}
+{% load multilingual_tags %}
+{% load m10l_helper %}
+
+{% block title %} Index {% endblock %}
+
+{% block content %}
+
+<div id="logo" align="center"><img src="{{ settings.STATIC_URL }}img/slackfind-logo.png" alt=""/></div>
+<div id="content">
+
+
+
+{% search %}
+
+<div id="empty"></div>
+
+<div class="left"><div class="pad">
+
+<h1>{% trans 'TOTAL STATISTICS' %}</h1>
+            {% simplecache 7200 statcache %}  
+                            {% stats %}
+            {% endsimplecache %}                
+            
+
+</div></div>
+
+
+<div class="right"><div class="pad">
+	<h1>{% trans 'TOP SEARCH QUERIES' %}</h1>
+	
+	{% simplecache 3600 "top_search_queries" %}
+
+	<ul class="cloud">
+        {% for top in top_search.top %}
+	<a class="tag{{ top.position }}" href="{% m10l_url search %}?name={{ top.name }}">{{ top.name }}</a>
+		{% endfor %}
+	</ul>
+	{% endsimplecache %}
+
+</div></div>
+
+
+<div class="empty"></div>
+
+
+{% endblock %}
+
+

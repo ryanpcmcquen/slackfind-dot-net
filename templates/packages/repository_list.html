@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load multilingual_tags %}
+{% load packages_tags %}
+{% load m10l_helper %}
+
+{% block content %}
+<div id="content">
+
+
+<div id="empty"></div>
+
+<div id="center">
+    <div class="pad" style="background:#333333;">
+	    <h1>{% trans 'REPOSITORIES' %}</h1>
+	    <table class="statistics">
+
+		    <tr>
+			<th width="200">
+				{% trans 'repository' %}
+			</th>
+			<th width="50">
+				{% trans 'mirrors' %}
+			</th>
+			<th width="50">
+				{% trans 'packages' %}
+			</th>
+		    </tr>
+
+		    {% for object in object_list %}
+			<tr>
+				<td>
+					{% repositorylink object %}
+				</td>
+				<td>
+					{{ object.count_mirrors }}
+				</td>
+				<td>
+					{{ object.count_packages }}
+				</td>	
+			</tr>			
+		    {% endfor %}
+	    </table>	    
+    </div>
+</div>
+
+</div> <!-- id="content" -->
+{% endblock %}
+

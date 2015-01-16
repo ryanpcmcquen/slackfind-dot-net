@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+     <object pk="27" model="packages.arch">
+          <field type="CharField" name="name">custom</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="8" model="packages.arch">
+          <field type="CharField" name="name">486</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="11" model="packages.arch">
+          <field type="CharField" name="name">static</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="17" model="packages.arch">
+          <field type="CharField" name="name">0.5.2</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="18" model="packages.arch">
+          <field type="CharField" name="name">20070920</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="19" model="packages.arch">
+          <field type="CharField" name="name">20070822</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="20" model="packages.arch">
+          <field type="CharField" name="name">xp</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="21" model="packages.arch">
+          <field type="CharField" name="name">celeron</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="22" model="packages.arch">
+          <field type="CharField" name="name">b9r5a</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="23" model="packages.arch">
+          <field type="CharField" name="name">nap</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="16" model="packages.arch">
+          <field type="CharField" name="name">supersparc</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="15" model="packages.arch">
+          <field type="CharField" name="name">athlonxp</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="13" model="packages.arch">
+          <field type="CharField" name="name">x86_64</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="12" model="packages.arch">
+          <field type="CharField" name="name">i486_nosse2</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="10" model="packages.arch">
+          <field type="CharField" name="name">i686_slacky</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="9" model="packages.arch">
+          <field type="CharField" name="name">without</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="6" model="packages.arch">
+          <field type="CharField" name="name">fw</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="7" model="packages.arch">
+          <field type="CharField" name="name">x86</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="5" model="packages.arch">
+          <field type="CharField" name="name">i686</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="4" model="packages.arch">
+          <field type="CharField" name="name">i586</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="3" model="packages.arch">
+          <field type="CharField" name="name">i486</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="2" model="packages.arch">
+          <field type="CharField" name="name">noarch</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="1" model="packages.arch">
+          <field type="CharField" name="name">i386</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="24" model="packages.arch">
+          <field type="CharField" name="name">all</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="25" model="packages.arch">
+          <field type="CharField" name="name">any</field>
+          <field type="BooleanField" name="active">False</field>
+     </object>
+     <object pk="26" model="packages.arch">
+          <field type="CharField" name="name">arm</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="14" model="packages.arch">
+          <field type="CharField" name="name">sparc</field>
+          <field type="BooleanField" name="active">True</field>
+     </object>
+     <object pk="22" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">7</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">6</field>
+          <field type="CharField" name="path">/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="26" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">9</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">1</field>
+          <field type="CharField" name="path">slackware-11.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="5" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="path">slackware-13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="41" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">13</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">8</field>
+          <field type="CharField" name="path">slackware64-current/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="13" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">8</field>
+          <field type="CharField" name="path">slackware64-current/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="40" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">13</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="path">slackware64-13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="28" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">9</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">3</field>
+          <field type="CharField" name="path">slackware-12.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="11" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">6</field>
+          <field type="CharField" name="path">slackware-current/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="14" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">3</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">6</field>
+          <field type="CharField" name="path">/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="24" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">8</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">3</field>
+          <field type="CharField" name="path">Slackware-12.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="23" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">8</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">2</field>
+          <field type="CharField" name="path">Slackware-12.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="20" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">6</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">7</field>
+          <field type="CharField" name="path">x86_64/13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="27" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">9</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">2</field>
+          <field type="CharField" name="path">slackware-12.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="37" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">11</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="path">Slackware-13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="42" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">9</field>
+          <field type="CharField" name="path">slackware-13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="43" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">10</field>
+          <field type="CharField" name="path">slackware64-13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="19" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">6</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">6</field>
+          <field type="CharField" name="path">i486/current/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="12" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">7</field>
+          <field type="CharField" name="path">slackware64-13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="16" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">5</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">9</field>
+          <field type="CharField" name="path">13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="25" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">8</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">4</field>
+          <field type="CharField" name="path">Slackware-12.2/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="53" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">14</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">9</field>
+          <field type="CharField" name="path">slackware-13.1/packages/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="17" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">5</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="path">13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="29" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">9</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">4</field>
+          <field type="CharField" name="path">slackware-12.2/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="6" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">2</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">1</field>
+          <field type="CharField" name="path">slackware-11.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="45" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">10</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">10</field>
+          <field type="CharField" name="path">13.1_64/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="18" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">6</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="path">i486/13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="31" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">10</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">1</field>
+          <field type="CharField" name="path">11.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="54" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">14</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">10</field>
+          <field type="CharField" name="path">slackware64-13.1/packages/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="3" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">3</field>
+          <field type="CharField" name="path">slackware-12.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="30" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">9</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="path">slackware-13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="7" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">2</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">2</field>
+          <field type="CharField" name="path">slackware-12.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="8" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">2</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">3</field>
+          <field type="CharField" name="path">slackware-12.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="32" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">10</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">2</field>
+          <field type="CharField" name="path">12.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="55" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">14</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">6</field>
+          <field type="CharField" name="path">slackware-current/packages/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="21" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">6</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">8</field>
+          <field type="CharField" name="path">x86_64/current/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="33" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">10</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">3</field>
+          <field type="CharField" name="path">12.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="15" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">4</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">6</field>
+          <field type="CharField" name="path">/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="34" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">10</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">4</field>
+          <field type="CharField" name="path">12.2/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="9" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">2</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">4</field>
+          <field type="CharField" name="path">slackware-12.2/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="35" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">10</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="path">13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="4" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">4</field>
+          <field type="CharField" name="path">slackware-12.2/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="56" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">14</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">8</field>
+          <field type="CharField" name="path">slackware64-current/packages/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="36" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">10</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">7</field>
+          <field type="CharField" name="path">13.0_64/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="10" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">2</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="path">slackware-13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="2" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">2</field>
+          <field type="CharField" name="path">slackware-12.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="44" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">10</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">9</field>
+          <field type="CharField" name="path">13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="1" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">1</field>
+          <field type="CharField" name="path">slackware-11.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="38" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">12</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">4</field>
+          <field type="CharField" name="path">Slackware-12.2/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="39" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">12</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="path">Slackware-13.0/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="52" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">11</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">9</field>
+          <field type="CharField" name="path">Slackware-13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="46" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">9</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">9</field>
+          <field type="CharField" name="path">slackware-13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="47" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">9</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">10</field>
+          <field type="CharField" name="path">slackware64-13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="50" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">2</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">9</field>
+          <field type="CharField" name="path">slackware-13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="51" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">2</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">10</field>
+          <field type="CharField" name="path">slackware64-13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="48" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">6</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">10</field>
+          <field type="CharField" name="path">x86_64/slackware-13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="49" model="packages.section">
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">6</field>
+          <field to="packages.distversion" name="distversion" rel="ManyToOneRel">9</field>
+          <field type="CharField" name="path">i486/slackware-13.1/</field>
+          <field type="BooleanField" name="crawl">True</field>
+          <field type="CharField" name="checksum"></field>
+          <field type="CharField" name="pc_checksum"></field>
+     </object>
+     <object pk="3" model="packages.mirror">
+          <field type="CharField" name="url">http://repository.slacky.eu/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">2</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="4" model="packages.mirror">
+          <field type="CharField" name="url">http://www.slackers.it/repository/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">3</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="6" model="packages.mirror">
+          <field type="CharField" name="url">http://www.rlworkman.net/pkgs/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">5</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="7" model="packages.mirror">
+          <field type="CharField" name="url">http://download.salixos.org/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">6</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="8" model="packages.mirror">
+          <field type="CharField" name="url">http://slack.isper.sk/pub/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">2</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="9" model="packages.mirror">
+          <field type="CharField" name="url">http://helmut.hullen.de/filebox/Linux/slackware/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">7</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="10" model="packages.mirror">
+          <field type="CharField" name="url">http://www2.linuxpackages.net/packages/Slackware/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">8</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="11" model="packages.mirror">
+          <field type="CharField" name="url">http://slackware.oc9.org/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">9</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="5" model="packages.mirror">
+          <field type="CharField" name="url">http://slackware.sukkology.net/repository</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">4</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="1" model="packages.mirror">
+          <field type="CharField" name="url">http://mirror.yandex.ru/slackware/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="2" model="packages.mirror">
+          <field type="CharField" name="url">http://carroll.cac.psu.edu/pub/linux/distributions/slackware/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="12" model="packages.mirror">
+          <field type="CharField" name="url">http://slackware.schoepfer.info/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">10</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="13" model="packages.mirror">
+          <field type="CharField" name="url">http://repository.elettrolinux.com/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">11</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="14" model="packages.mirror">
+          <field type="CharField" name="url">http://www.dia-tech.net/linux/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">12</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="15" model="packages.mirror">
+          <field type="CharField" name="url">http://danixland.net/packages/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">13</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">False</field>
+     </object>
+     <object pk="16" model="packages.mirror">
+          <field type="CharField" name="url">http://ponce.cc/slackware/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">14</field>
+          <field type="BooleanField" name="available">True</field>
+          <field type="BooleanField" name="alive">True</field>
+     </object>
+     <object pk="3" model="packages.repository">
+          <field type="CharField" name="name">slackers.it</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">4</field>
+          <field type="CharField" name="encoding">utf-8</field>
+          <field type="CharField" name="url">http://www.slackers.it/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="5" model="packages.repository">
+          <field type="CharField" name="name">rlworkman.net</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">6</field>
+          <field type="CharField" name="encoding">utf-8</field>
+          <field type="CharField" name="url">http://www.rlworkman.net/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="6" model="packages.repository">
+          <field type="CharField" name="name">salixos.org</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">7</field>
+          <field type="CharField" name="encoding">utf-8</field>
+          <field type="CharField" name="url">http://salixos.org/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="2" model="packages.repository">
+          <field type="CharField" name="name">slacky.eu</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">3</field>
+          <field type="CharField" name="encoding">ISO-8859-1</field>
+          <field type="CharField" name="url">http://slacky.eu/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="7" model="packages.repository">
+          <field type="CharField" name="name">helmut.hullen.de</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">9</field>
+          <field type="CharField" name="encoding">ISO-8859-1</field>
+          <field type="CharField" name="url">http://helmut.hullen.de/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="8" model="packages.repository">
+          <field type="CharField" name="name">linuxpackages.net</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">10</field>
+          <field type="CharField" name="encoding">ISO-8859-1</field>
+          <field type="CharField" name="url">http://www.linuxpackages.net/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="4" model="packages.repository">
+          <field type="CharField" name="name">slackware.sukkology.net</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">5</field>
+          <field type="CharField" name="encoding">ISO-8859-1</field>
+          <field type="CharField" name="url">http://slackware.sukkology.net/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="1" model="packages.repository">
+          <field type="CharField" name="name">slackware.com</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">2</field>
+          <field type="CharField" name="encoding">ISO-8859-1</field>
+          <field type="CharField" name="url">http://slackware.com/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="9" model="packages.repository">
+          <field type="CharField" name="name">slackware.oc9.org</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">11</field>
+          <field type="CharField" name="encoding">ISO-8859-1</field>
+          <field type="CharField" name="url">http://slackware.oc9.org/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="10" model="packages.repository">
+          <field type="CharField" name="name">slackware.schoepfer.info</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">12</field>
+          <field type="CharField" name="encoding">utf-8</field>
+          <field type="CharField" name="url">http://slackware.schoepfer.info/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="12" model="packages.repository">
+          <field type="CharField" name="name">dia-tech.net</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">14</field>
+          <field type="CharField" name="encoding">utf-8</field>
+          <field type="CharField" name="url">http://www.dia-tech.net/linux/</field>
+          <field type="BooleanField" name="crawl">False</field>
+     </object>
+     <object pk="13" model="packages.repository">
+          <field type="CharField" name="name">danixland.net</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">15</field>
+          <field type="CharField" name="encoding">utf-8</field>
+          <field type="CharField" name="url">http://danixland.net/packages/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="11" model="packages.repository">
+          <field type="CharField" name="name">repository.elettrolinux.com</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">13</field>
+          <field type="CharField" name="encoding">ISO-8859-1</field>
+          <field type="CharField" name="url">http://repository.elettrolinux.com/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="14" model="packages.repository">
+          <field type="CharField" name="name">ponce.cc</field>
+          <field to="packages.mirror" name="default_mirror" rel="ManyToOneRel">16</field>
+          <field type="CharField" name="encoding">ISO-8859-1</field>
+          <field type="CharField" name="url">http://ponce.cc/slackware/</field>
+          <field type="BooleanField" name="crawl">True</field>
+     </object>
+     <object pk="2" model="packages.subrepository">
+          <field type="CharField" name="path">extra/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+     </object>
+     <object pk="3" model="packages.subrepository">
+          <field type="CharField" name="path">pasture/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+     </object>
+     <object pk="1" model="packages.subrepository">
+          <field type="CharField" name="path">testing/</field>
+          <field to="packages.repository" name="repository" rel="ManyToOneRel">1</field>
+     </object>
+     <object pk="1" model="packages.distversion">
+          <field type="CharField" name="name">11.0</field>
+     </object>
+     <object pk="2" model="packages.distversion">
+          <field type="CharField" name="name">12.0</field>
+     </object>
+     <object pk="3" model="packages.distversion">
+          <field type="CharField" name="name">12.1</field>
+     </object>
+     <object pk="4" model="packages.distversion">
+          <field type="CharField" name="name">12.2</field>
+     </object>
+     <object pk="5" model="packages.distversion">
+          <field type="CharField" name="name">13.0</field>
+     </object>
+     <object pk="6" model="packages.distversion">
+          <field type="CharField" name="name">current</field>
+     </object>
+     <object pk="7" model="packages.distversion">
+          <field type="CharField" name="name">64-13.0</field>
+     </object>
+     <object pk="8" model="packages.distversion">
+          <field type="CharField" name="name">64-current</field>
+     </object>
+     <object pk="9" model="packages.distversion">
+          <field type="CharField" name="name">13.1</field>
+     </object>
+     <object pk="10" model="packages.distversion">
+          <field type="CharField" name="name">64-13.1</field>
+     </object>
+</django-objects>

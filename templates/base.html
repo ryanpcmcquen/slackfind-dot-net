@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% load m10l_helper %}
+
+    <head>
+        <title>Slackware Packages Search System - {% block title %} {% endblock %}</title>
+        {% load i18n %}
+        {% load multilingual_tags %}        
+        <script language="JavaScript" type="text/javascript" src="{{ settings.STATIC_URL }}js/jquery.js">
+        </script>
+        {% block css %}
+        {% endblock %}
+        {% block extrahead %}
+        {% endblock %}
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF8"/>
+	<meta http-equiv="Content-Language" content="{{ CURRENT_LANGUAGE_CODE }}" />
+        <meta name="Keywords" content="slackware linux package search system find slackfind repository"/>
+        <link rel="icon" href="{{ settings.STATIC_URL }}img/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="{{ settings.STATIC_URL }}img/favicon.ico" type="image/x-icon"/>   
+        <link rel="search" type="application/opensearchdescription+xml" title="Slackfind.net" href="{{ settings.STATIC_URL }}opensearch.xml">
+        <link href="{{ settings.STATIC_URL }}css/css.css" rel="stylesheet" type="text/css"/>
+ 	<meta name="google-site-verification" content="kHHPwBTk-cBjkKyP8Zag5l2zhaT2o0voYiqRBJoH0eU" />
+	<meta name='yandex-verification' content='6608f26efeb177e6' />
+    </head>
+    <body>
+    <div id="page">
+            <div id="header">
+                <div class="pad">
+                    <div style="float:left">
+                    <ul class="menu">
+                        <li>
+                        <a href="{% m10l_url splash %}" rel="mainpage">home</a>
+                        </li>
+			<li>
+			<a href="{% m10l_url about %}">about</a>
+			</li>
+                    </ul>
+                    </div>
+                    
+                    <div id="langbar" align="center">
+                        {% language_bar %}
+                    </div>
+                                                                            
+                </div>
+            </div>
+
+            {% block content %}
+
+				
+
+            {% endblock %}
+
+
+
+        </div>
+
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{
+var pageTracker = _gat._getTracker("UA-15241592-2");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+    </body>
+    
+</html>

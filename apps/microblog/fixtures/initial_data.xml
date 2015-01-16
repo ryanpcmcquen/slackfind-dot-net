@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+     <object pk="1" model="microblog.posttranslation">
+          <field type="CharField" name="text">The Slackfind is online now. There was down by stupid reason - removed on VDS payout failure. Since now it opensource, feel free to get sources and create an issues at &lt;a href="http://bitbucket.org/tony/slackfind"&gt;bitbucket&lt;/a&gt;</field>
+          <field type="CharField" name="language_code">en</field>
+          <field to="microblog.post" name="master" rel="ManyToOneRel">1</field>
+     </object>
+     <object pk="3" model="microblog.posttranslation">
+          <field type="CharField" name="text">13.1 and 64-13.1 were added in the slackfind database. Feel free to add a new repository sections in fixtures at bitbucket.</field>
+          <field type="CharField" name="language_code">en</field>
+          <field to="microblog.post" name="master" rel="ManyToOneRel">2</field>
+     </object>
+     <object pk="2" model="microblog.posttranslation">
+          <field type="CharField" name="text">Slackfind снова онлайн. Был недоступен по глупой причине - VDS был удален за неуплату. С настоящего момента исходники сайта открыты. Вы можете их скачать либо создать тикет на &lt;a href="http://bitbucket.org/tony/slackfind"&gt;bitbucket&lt;/a&gt;</field>
+	  <field type="CharField" name="language_code">ru</field>
+          <field to="microblog.post" name="master" rel="ManyToOneRel">1</field>
+     </object>
+     <object pk="4" model="microblog.posttranslation">
+          <field type="CharField" name="text">13.1 и 64-13.1 были добавлены в базу данных slackfind. Не стесняйтесь добавлять новые секции репозитариев в fixtures на bitbucket.</field>
+          <field type="CharField" name="language_code">ru</field>
+          <field to="microblog.post" name="master" rel="ManyToOneRel">2</field>
+     </object>
+
+     <object pk="5" model="microblog.posttranslation">
+	     <field type="CharField" name="text">A new repository &lt;a rel="nofollow" href="http://ponce.cc"&gt;ponce.cc&lt;/a&gt; added into slackfind. Thanks to AQEEL from Kingdom of Saudi Arabia.</field>
+          <field type="CharField" name="language_code">en</field>
+          <field to="microblog.post" name="master" rel="ManyToOneRel">3</field>
+     </object>
+     <object pk="6" model="microblog.posttranslation">
+	     <field type="CharField" name="text">Новый репозитарий &lt;a rel="nofollow" href="http://ponce.cc"&gt;ponce.cc&lt;/a&gt; добавлен в slackfind. Спасибо AQEEL из Королевства Саудовская Аравия.</field>
+          <field type="CharField" name="language_code">ru</field>
+          <field to="microblog.post" name="master" rel="ManyToOneRel">3</field>
+     </object>
+
+
+     <object pk="2" model="microblog.post">
+          <field type="DateField" name="pub_date">2010-05-28</field>
+          <field type="CharField" name="posted_by">Tony</field>
+     </object>
+     <object pk="1" model="microblog.post">
+          <field type="DateField" name="pub_date">2010-05-21</field>
+          <field type="CharField" name="posted_by">Tony</field>
+     </object>
+     <object pk="3" model="microblog.post">
+          <field type="DateField" name="pub_date">2011-01-23</field>
+          <field type="CharField" name="posted_by">Tony</field>
+     </object>
+
+</django-objects>

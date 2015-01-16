@@ -1,0 +1,9 @@
+{% load i18n %}
+{% load m10l_helper %}
+
+{% trans 'download' %}: 
+{% if package.repository.more_than_one_mirror %}
+	<a href="{% m10l_url choose-mirror-by-params package.section.id package.name package.version package.arch.name package.build %}">
+		{% trans 'choose mirror' %}</a> | 
+{% endif %} 
+<a href="{{ package.default_download_link }}">{% trans 'default mirror' %}</a>  

@@ -1,0 +1,59 @@
+{% load i18n %}
+{% load m10l_helper %}
+
+ <table>
+                            <tr>
+                                <td width="200">
+                                    Repositories:
+                                </td>
+                                <td>
+                                    {{ repositories }} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Mirrors:
+                                </td>
+                                <td>
+                                    {{ mirrors }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Packages:
+                                </td>
+                                <td>
+                                    {{ packages }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Size Compressed:
+                                </td>
+                                <td>
+                                    {{ size_compressed|floatformat }} Gb
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Size Uncompressed:
+                                </td>
+                                <td>
+                                    {{ size_uncompressed|floatformat }} Gb
+                                </td>
+                            </tr>
+                            <tr>
+							    <td colspan="2">
+							    &nbsp;
+							    </td>
+							</td>
+							</tr>
+							<tr>
+							    <td colspan="2">
+							    <a href="{% m10l_url repository-list %}">[{% trans 'detail' %}]</a>
+							    </td>
+							</td>
+							</tr>   
+                        </table>
+
+

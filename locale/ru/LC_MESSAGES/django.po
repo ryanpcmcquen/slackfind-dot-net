@@ -1,0 +1,373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-08 15:01-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/multilingual/flatpages/admin.py:9
+#: apps/multilingual/flatpages/models.py:9
+msgid "URL"
+msgstr ""
+
+#: apps/multilingual/flatpages/admin.py:10
+msgid ""
+"Example: '/about/contact/'. Make sure to have leading and trailing slashes."
+msgstr ""
+
+#: apps/multilingual/flatpages/admin.py:12
+msgid ""
+"This value must contain only letters, numbers, underscores, dashes or "
+"slashes."
+msgstr ""
+
+#: apps/multilingual/flatpages/admin.py:23
+msgid "Advanced options"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:10
+msgid "enable comments"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:11
+msgid "template name"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:12
+msgid ""
+"Example: 'flatpages/contact_page.html'. If this isn't provided, the system "
+"will use 'flatpages/default.html'."
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:13
+msgid "registration required"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:13
+msgid "If this is checked, only logged-in users will be able to view the page."
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:30
+msgid "title"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:31
+msgid "content"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:35
+msgid "multilingual flat page"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:36
+msgid "multilingual flat pages"
+msgstr ""
+
+#: apps/packages/models.py:12 apps/packages/models.py:26
+#: apps/packages/models.py:268
+msgid "name"
+msgstr "имя"
+
+#: apps/packages/models.py:13
+msgid "active"
+msgstr "активный"
+
+#: apps/packages/models.py:22 apps/packages/models.py:139
+#: templates/packages/templatetags/search.html:36
+msgid "section"
+msgstr "секция"
+
+#: apps/packages/models.py:23 apps/packages/models.py:34
+#: apps/packages/models.py:124 apps/packages/models.py:256
+#: apps/packages/models.py:269
+msgid "version"
+msgstr "версия"
+
+#: apps/packages/models.py:24 apps/packages/models.py:123
+#: apps/packages/models.py:178 apps/packages/models.py:230
+#: templates/packages/repository_list.html:20
+#: templates/packages/templatetags/search.html:52
+msgid "repository"
+msgstr "репозитарий"
+
+#: apps/packages/models.py:27
+msgid "Description"
+msgstr "Описание"
+
+#: apps/packages/models.py:28
+msgid "package size"
+msgstr "размер пакета"
+
+#: apps/packages/models.py:29
+msgid "package programm"
+msgstr ""
+
+#: apps/packages/models.py:30
+msgid "dependencies"
+msgstr "зависимости"
+
+#: apps/packages/models.py:31
+msgid "conflicts"
+msgstr "конфликты"
+
+#: apps/packages/models.py:32
+msgid "suggests"
+msgstr "предложения"
+
+#: apps/packages/models.py:35
+msgid "build"
+msgstr "билд"
+
+#: apps/packages/models.py:36
+msgid "path"
+msgstr "путь"
+
+#: apps/packages/models.py:37
+msgid "visibility"
+msgstr "видимость"
+
+#: apps/packages/models.py:39 templates/packages/templatetags/search.html:63
+msgid "arch"
+msgstr "архитектура"
+
+#: apps/packages/models.py:41
+msgid "extension"
+msgstr "расширение"
+
+#: apps/packages/models.py:42 apps/packages/models.py:133
+msgid "package control checksum"
+msgstr "контрольная сумма пакета"
+
+#: apps/packages/models.py:48
+msgid "package"
+msgstr "пакет"
+
+#: apps/packages/models.py:49 templates/packages/repository_list.html:26
+msgid "packages"
+msgstr "пакеты"
+
+#: apps/packages/models.py:125
+msgid "path from root"
+msgstr "путь от корня"
+
+#: apps/packages/models.py:131
+msgid "metadata checksum"
+msgstr "чексумма метаданных"
+
+#: apps/packages/models.py:140
+msgid "sections"
+msgstr "секции"
+
+#: apps/packages/models.py:180
+msgid "available"
+msgstr "доступность"
+
+#: apps/packages/models.py:181
+msgid "alive"
+msgstr "оживленность"
+
+#: apps/packages/models.py:190
+msgid "mirror"
+msgstr "зеркало"
+
+#: apps/packages/models.py:191 templates/packages/repository_list.html:23
+msgid "mirrors"
+msgstr "зеркала"
+
+#: apps/packages/models.py:203
+msgid "Codepage PACKAGES.TXT"
+msgstr "Кодировка PACKAGES.TXT"
+
+#: apps/packages/models.py:206
+msgid "url"
+msgstr ""
+
+#: apps/packages/models.py:208
+msgid "flag collect packages"
+msgstr "флаг сбора пакетов"
+
+#: apps/packages/models.py:231
+msgid "repositories"
+msgstr "репозитарии"
+
+#: apps/packages/models.py:253
+msgid "verbose name"
+msgstr "отображаемое имя"
+
+#: apps/packages/models.py:257
+msgid "versions"
+msgstr "версии"
+
+#: apps/packages/models.py:270 templates/packages/templatetags/search.html:20
+msgid "advanced search"
+msgstr "расширенный поиск"
+
+#: apps/packages/models.py:272
+msgid "query time"
+msgstr "время запроса"
+
+#: apps/voting/forms.py:105
+msgid "you have already voted"
+msgstr ""
+
+#: apps/voting/forms.py:108
+msgid "login before voting"
+msgstr ""
+
+#: apps/voting/forms.py:111
+msgid "choose at least one variant"
+msgstr ""
+
+#: apps/voting/models.py:17
+msgid "related vote"
+msgstr ""
+
+#: apps/voting/models.py:25
+msgid "label"
+msgstr ""
+
+#: apps/voting/models.py:28
+msgid "visible variant"
+msgstr ""
+
+#: apps/voting/models.py:79
+msgid "date start"
+msgstr ""
+
+#: apps/voting/models.py:80
+msgid "date end"
+msgstr ""
+
+#: apps/voting/models.py:81
+msgid "active voting"
+msgstr ""
+
+#: apps/voting/models.py:86
+msgid "voting Label"
+msgstr ""
+
+#: templates/base.html:28
+msgid "home"
+msgstr "главная"
+
+#: templates/packages/choose_mirror.html:18
+msgid "Choose mirror for package "
+msgstr "Выбор зеркала для пакета"
+
+#: templates/packages/repository_list.html:15
+msgid "REPOSITORIES"
+msgstr "РЕПОЗИТАРИИ"
+
+#: templates/packages/repository_list.html:45
+msgid "repository requirements"
+msgstr "требования к репозитариям"
+
+#: templates/packages/search.html:42
+msgid "location"
+msgstr "расположение"
+
+#: templates/packages/search.html:59
+msgid "size compressed"
+msgstr "размер сжатый"
+
+#: templates/packages/search.html:60
+msgid "size uncompressed"
+msgstr "размер несжатый"
+
+#: templates/packages/splash.html:25
+msgid "TOTAL STATISTICS"
+msgstr "ОБЩАЯ СТАТИСТИКА"
+
+#: templates/packages/splash.html:35
+msgid "TOP SEARCH QUERIES"
+msgstr "ТОП ПОИСКОВЫХ ЗАПРОСОВ"
+
+#: templates/packages/splash.html:56
+msgid "VOTING"
+msgstr "ГОЛОСОВАНИЯ"
+
+#: templates/packages/splash.html:96 templates/packages/splash.html.py:120
+msgid "voting result"
+msgstr "результаты голосования"
+
+#: templates/packages/splash.html:125
+msgid "make vote"
+msgstr "голосовать"
+
+#: templates/packages/splash.html:138
+msgid "no active voting available"
+msgstr "нет активных голосований"
+
+#: templates/packages/splash.html:147
+msgid "MICROBLOG"
+msgstr "МИКРОБЛОГ"
+
+#: templates/packages/templatetags/download.html:3
+msgid "download"
+msgstr "скачать"
+
+#: templates/packages/templatetags/download.html:3
+msgid "choose mirror"
+msgstr "выбрать зеркало"
+
+#: templates/packages/templatetags/download.html:3
+msgid "default mirror"
+msgstr "зеркало по умолчанию"
+
+#: templates/packages/templatetags/pageswitcher.html:5
+msgid "pages"
+msgstr "страницы"
+
+#: templates/packages/templatetags/search.html:9
+msgid "PACKAGES SEARCH"
+msgstr "ПОИСК ПАКЕТОВ"
+
+#: templates/packages/templatetags/search.html:15
+#: templates/packages/templatetags/search.html:30
+msgid "package name"
+msgstr "имя пакета"
+
+#: templates/packages/templatetags/search.html:16
+#: templates/packages/templatetags/search.html:57
+msgid "slackware version"
+msgstr "версия slackware"
+
+#: templates/packages/templatetags/search.html:17
+#: templates/packages/templatetags/search.html:74
+msgid "search"
+msgstr "поиск"
+
+#: templates/packages/templatetags/search.html:41
+msgid "package version"
+msgstr "версия пакета"
+
+#: templates/packages/templatetags/search.html:78
+msgid "simple search"
+msgstr "простой поиск"
+
+#: templates/packages/templatetags/stats.html:53
+msgid "detail"
+msgstr "далее"
+
+#: templates/voting/vote_result.html:15
+msgid "VOTING RESULTS"
+msgstr "РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ"
+
+#: templates/voting/vote_result.html:26
+msgid "percentage"
+msgstr "проценты"
+
+#: templates/voting/vote_result.html:26
+msgid "votes"
+msgstr "голоса"

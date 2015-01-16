@@ -1,0 +1,90 @@
+{% load i18n %}
+{% load multilingual_tags %}
+{% load m10l_helper %}
+
+<script language="JavaScript" type="text/javascript" src="{{ settings.STATIC_URL }}js/search.js"></script>
+
+<div id="search"><div class="pad" style="background: #333333;">
+		
+        <h1>{% trans 'PACKAGES SEARCH' %}</h1>
+            
+        <div align="center" class="info" id="simple-search" {% if is_advanced_form %}style="display: none;"{% endif %}>
+            
+            <form action="{% m10l_url search %}" method="get" >
+                
+                    {% trans 'package name' %}: {{ search_form.name }}&nbsp;
+                    {% trans 'slackware version' %}: {{ search_form.distversion }}
+                    <input type="submit" value="{% trans 'search' %}"/>                                    
+                </form>
+
+                <a href="javascript:void(0);" onclick="showAdvanced();" id="search-switcher">[{% trans 'advanced search' %}]</a>
+
+            </div>
+
+            <div align="center" class="info" id="advanced-search" {% if not is_advanced_form %}style="display: none;"{% endif %}>
+                
+                 <form action="{% m10l_url advanced-search %}" method="get">
+                    <table>
+                        <tr>
+                            <td>
+                            	<label><h3 class="clickable" name="id_name">{% trans 'package name' %}:</h3></label> 
+                                {{ advanced_search_form.name }}
+								
+                            </td>
+
+                            <td>
+                                <label><h3 class="clickable" name="id_location">{% trans 'section' %}:</h3></label> 
+                                {{ advanced_search_form.location }}
+                            </td>
+
+                            <td>
+                                <label><h3 class="clickable" name="id_package_version">{% trans 'package version' %}:</h3></label> 
+                                {{ advanced_search_form.package_version }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>{% trans 'repository' %}:</h3>
+                                {{ advanced_search_form.repository }}
+                            </td>
+
+                            <td>
+                                <h3>{% trans 'slackware version' %}:</h3>
+
+                                {{ advanced_search_form.distversion }}
+                            </td>
+ 
+                            <td>                            	
+                                <h3>{% trans 'arch' %}:</h3>
+                                {{ advanced_search_form.arch }}
+								
+                            </td>
+                            
+                        </tr>
+
+
+                        <tr>
+                            <td colspan="6">
+                                <div align="center">
+                                    <input type="submit" value="{% trans 'search' %}"/>
+                                </div>
+                                <br>
+                                <div align="center">
+                                    <a href="javascript:void(0);" onclick="showSimple();">[{% trans 'simple search' %}]</a>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                    </table>
+					                                                     
+                </form>               
+                
+            </div>
+    
+    </div>
+    
