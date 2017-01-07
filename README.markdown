@@ -27,9 +27,3 @@
  * if changes are significant add your blog post and update microblog/fixtures/initial_data.xml
  * push your changes into your branch
  * pull request
-
-## CONTACTS 
-
- * Email: ryan.q [at] linux [dot] com
-
-
